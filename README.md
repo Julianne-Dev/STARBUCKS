@@ -15,5 +15,5 @@ Neste projeto, foquei em resolver problemas de:
 * Interatividade simples e eficiente com JavaScript.
 
 ## 🔗 Links Úteis
-- 🌐 [Visualizar Site Ao Vivo](COLOQUE_SEU_LINK_DO_GITHUB_PAGES_AQUI)
+- 🌐 [Visualizar Site Ao Vivo]( https://julianne-dev.github.io/STARBUCKS/)
 - 💼 [Meu LinkedIn](www.linkedin.com/in/julianneemydio)
