@@ -16,4 +16,4 @@ Neste projeto, foquei em resolver problemas de:
 
 ## 🔗 Links Úteis
 - 🌐 [Visualizar Site Ao Vivo]( https://julianne-dev.github.io/STARBUCKS/)
-- 💼 [Meu LinkedIn](www.linkedin.com/in/julianneemydio)
+- 💼 [Meu LinkedIn](https://www.linkedin.com/in/julianneemydio/)
