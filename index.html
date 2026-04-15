@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Experience</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <title>Starbucks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     
-    <div class="circulo"></div>
+    <div class="circulo" id="circulo"></div>
 
-    <img src="img/logo.png">
+    <header>
+        <img src="img/logo.png" class="logo" alt="Starbucks Logo">
+    </header>
     
-    <div class="caixa-conteudo">
-
-
+    <main class="caixa-conteudo">
         <div class="caixa-texto">
-            <h2>It's not just Coffe It's <span>Starbucks</span> </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quasi recusandae magnam officiis
-                voluptate.
-                Explicabo ipsa harum perspiciatis nostrum atque ducimus doloremque a debitis possimus quis, ut eveniet
-                velit
-                repudiandae!</p>
-            <button>Clique aqui</button>
+            <h2>It's not just Coffee<br>It's <span id="span-color">Starbucks</span></h2>
+            <p>Descubra o equilíbrio perfeito entre aroma e sabor. Cada xícara é preparada com grãos selecionados para transformar seu dia em uma experiência extraordinária.</p>
+            <button class="btn-principal" id="meu-botao">SAIBA MAIS</button>
         </div>
 
         <div class="caixa-imagem">
-            <img class="starbucks" src="img/img1.png">
+            <img class="starbucks" id="copo-principal" src="img/img1.png" alt="Copo Starbucks">
         </div>
-
-    </div>
+    </main>
 
     <div class="caixa-menu">
-        <img onclick="trocarCor('rgb(1, 78, 1)');trocaImagem ('./img/img1.png')" class="botao-menu" src="img/thumb1.png">
-        <img onclick="trocarCor('#eb7495');trocaImagem ('./img/img2.png')" class="botao-menu" src="img/thumb2.png">
-        <img onclick="trocarCor('#d752b1');trocaImagem ('./img/img3.png')" class="botao-menu" src="img/thumb3.png">
+        <img onclick="mudarSabor('#017143', 'img/img1.png')" class="botao-menu" src="img/thumb1.png" alt="Sabor Verde">
+        <img onclick="mudarSabor('#eb7495', 'img/img2.png')" class="botao-menu" src="img/thumb2.png" alt="Sabor Rosa">
+        <img onclick="mudarSabor('#d752b1', 'img/img3.png')" class="botao-menu" src="img/thumb3.png" alt="Sabor Roxo">
     </div>
 
-</body>
-<script src="scripts.js">  </script>
+    <footer class="aviso-legal">
+        <p>Este site é um projeto acadêmico para fins de estudo. Marcas e imagens pertencem à Starbucks Corporation.</p>
+    </footer>
 
+    <script src="scripts.js"></script>
+</body>
 </html>

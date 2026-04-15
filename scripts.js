@@ -1,13 +1,27 @@
+/**
+ * Função principal para trocar o sabor
+ * @param {string} cor - A cor do círculo e elementos de texto
+ * @param {string} imagem - O caminho da imagem do copo
+ */
+function mudarSabor(cor, imagem) {
+    const circulo = document.getElementById("circulo");
+    const copo = document.getElementById("copo-principal");
+    const span = document.getElementById("span-color");
+    const botao = document.getElementById("meu-botao");
 
+   
+    circulo.style.background = cor;
+    span.style.color = cor;
+    botao.style.background = cor;
 
-let circulo = document.querySelector(".circulo")
-let imagem = document.querySelector(".starbucks")
+  
+    copo.style.opacity = "0";
+    copo.style.transform = "translateY(30px) scale(0.9)";
 
-function trocarCor(cor){
-    circulo.style.backgroundColor = cor
-}
-
-function trocaImagem(img){
     
-    imagem.src = img 
+    setTimeout(() => {
+        copo.src = imagem;
+        copo.style.opacity = "1";
+        copo.style.transform = "translateY(0) scale(1)";
+    }, 300); 
 }
